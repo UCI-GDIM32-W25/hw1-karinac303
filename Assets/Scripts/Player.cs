@@ -18,7 +18,22 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        
+        if(Input.GetKey(KeyCode.W)) //moves up when pressed W
+        {
+            transform.Translate(Vector3.up * _speed * Time.deltaTime);
+        }
+        if(Input.GetKey(KeyCode.S)) //moves down when pressed S
+        {
+            transform.Translate(Vector3.down * _speed * Time.deltaTime);
+        }
+        if(Input.GetKey(KeyCode.A)) //moves left when pressed A
+        {
+            transform.Translate(Vector3.left * _speed * Time.deltaTime);
+        }
+        if(Input.GetKey(KeyCode.D)) //moves right when pressed D
+        {
+            transform.Translate(Vector3.right * _speed * Time.deltaTime);
+        }
     }
 
     public void PlantSeed ()
