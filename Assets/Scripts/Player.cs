@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
             transform.Translate(Vector3.right * _speed * Time.deltaTime);
         }
         
-        if(Input.GetKey(KeyCode.Space) && _numSeedsLeft > 0) //if space is pressed and there are still seeds left
+        if(Input.GetKeyDown(KeyCode.Space) && _numSeedsLeft > 0) //if space is pressed and there are still seeds left
         {
             PlantSeed();
         }
@@ -43,8 +43,8 @@ public class Player : MonoBehaviour
 
     public void PlantSeed ()
     {
-        Instantiate(_plantPrefab);
         _numSeedsLeft--;
         _numSeedsPlanted++;
+        Instantiate(_plantPrefab);
     }
 }
