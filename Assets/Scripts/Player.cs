@@ -8,8 +8,8 @@ public class Player : MonoBehaviour
     [SerializeField] private int _numSeeds = 5; 
     [SerializeField] private PlantCountUI _plantCountUI;
 
-    private int _numSeedsLeft;
-    private int _numSeedsPlanted;
+    private int _numSeedsLeft = 5;
+    private int _numSeedsPlanted = 0;
 
     private void Start ()
     {
@@ -34,10 +34,17 @@ public class Player : MonoBehaviour
         {
             transform.Translate(Vector3.right * _speed * Time.deltaTime);
         }
+        
+        if(Input.GetKey(KeyCode.Space) && _numSeedsLeft > 0) //if space is pressed and there are still seeds left
+        {
+            PlantSeed();
+        }
     }
 
     public void PlantSeed ()
     {
-        
+        Instantiate(_plantPrefab);
+        _numSeedsLeft--;
+        _numSeedsPlanted++;
     }
 }

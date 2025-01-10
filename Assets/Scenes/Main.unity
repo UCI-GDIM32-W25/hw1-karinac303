@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 1
-  _playerTransform: {fileID: 0}
-  _plantPrefab: {fileID: 0}
+  _playerTransform: {fileID: 924286782}
+  _plantPrefab: {fileID: 8125009443585687436, guid: b6e16b8c3ca660a45a7e568c9712b09b, type: 3}
   _numSeeds: 5
   _plantCountUI: {fileID: 0}
 --- !u!212 &924286781
@@ -198,7 +198,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 888216046, guid: 6c76c7e97a3914d1c8180322aa5cba71, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -363,6 +363,22 @@ PrefabInstance:
     - target: {fileID: 111175551659843171, guid: b6e16b8c3ca660a45a7e568c9712b09b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536104353191366829, guid: b6e16b8c3ca660a45a7e568c9712b09b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1947565188, guid: 1980b354f5f6a423bb37386079ae45dd, type: 3}
+    - target: {fileID: 4536104353191366829, guid: b6e16b8c3ca660a45a7e568c9712b09b, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536104353191366829, guid: b6e16b8c3ca660a45a7e568c9712b09b, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536104353191366829, guid: b6e16b8c3ca660a45a7e568c9712b09b, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8125009443585687436, guid: b6e16b8c3ca660a45a7e568c9712b09b, type: 3}
       propertyPath: m_Name
