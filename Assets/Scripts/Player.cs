@@ -45,6 +45,7 @@ public class Player : MonoBehaviour
     {
         _numSeedsLeft--;
         _numSeedsPlanted++;
-        Instantiate(_plantPrefab);
+        Instantiate(_plantPrefab,_playerTransform);
+        //instantiate on location of player
     }
 }
