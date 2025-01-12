@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
 
     private void Start ()
     {
-        
+        _plantCountUI.UpdateSeeds(_numSeedsLeft,_numSeedsPlanted);
     }
 
     private void Update()
@@ -42,10 +42,10 @@ public class Player : MonoBehaviour
     }
 
     public void PlantSeed ()
-    {
+    {  
         _numSeedsLeft--;
         _numSeedsPlanted++;
-        Instantiate(_plantPrefab,_playerTransform);
-        //instantiate on location of player
+        _plantCountUI.UpdateSeeds(_numSeedsLeft,_numSeedsPlanted);
+        Instantiate(_plantPrefab,transform.position,transform.rotation);
     }
 }
